@@ -1,0 +1,309 @@
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#wpcontent.ys-custom-admin-layout {
+  margin: 0;
+  padding: 0;
+}
+
+
+#ys-wrap .section {
+  margin: 20px 10px;
+  padding: 0;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+#ys-wrap .section h2 {
+  margin: 0;
+  padding: 10px 15px;
+  background: #e5e5e5;
+}
+
+
+#ys-wrap .section ul {
+  margin: 0;
+  padding: 10px 20px;
+}
+
+#ys-wrap .section li {
+  margin-top: 20px;
+}
+
+#ys-wrap .section li.full-width label {
+  width: 100%;
+  display: block;
+  margin-bottom: 5px;
+}
+
+#ys-wrap .section li input.ys-text {
+  width: 280px;
+  height: 28px;
+}
+
+#ys-wrap .section label {
+  display: inline-block;
+  width: 200px;
+}
+
+
+/************************ DASHBOARD YS LOGO ICON ************************/
+#toplevel_page_ys .dashicons-ys-logo {
+  background: url(../images/yanak-soft-icon-outline.png) no-repeat;
+  background-position: 0 0;
+}
+
+
+
+/************************ YS OVERLAY ************************/
+#ys-overlay {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.2);
+}
+
+#ys-overlay.show {
+  display: flex;
+  justify-content: center
+}
+
+.ys-spinner {
+	position: absolute;
+	display: none;
+	justify-content: center;
+	align-items: center;	
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255,255,255,0.1);
+}
+
+.ys-spinner.show {
+	display: flex;
+}
+
+.ys-spinner .loader {
+	display: inline-block;	
+	width: 25px;
+	height: 25px;
+	vertical-align: middle;
+	border: 2.5px solid #055d92;
+	border-radius: 20px;
+	border-bottom-color: transparent !important;
+	animation: spin 2s infinite linear;
+}
+
+
+
+/************************ SINGLE PRODUCT TABS ************************/
+#ys-product-description {
+  margin: 10px;
+}
+
+#ys-product-description #pages {
+  float: right;
+  padding: 10px;
+  background-color: #d0d0d0;
+  border-bottom: 0;
+}
+
+#ys-product-description #pages div {
+  float: left;
+}
+
+#ys-product-description #pages a, #ys-product-description #pages a {
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  margin-top: 0px;
+  padding: 0px 15px;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+#ys-product-description #pages #new-tab a {
+  margin-right: 5px; 
+  background: #0073aa;
+}
+
+#ys-product-description #pages #delete-tab a {
+  background: #c7386a;
+}
+
+#ys-product-description #tabs {
+  position: absolute;
+  z-index: 1000;
+  display: block;
+  float: left;
+  height: 32px;
+  margin-top: 21px;
+}
+
+#ys-product-description #tabs li {
+  float: left;
+  margin: 0 5px 0 0;
+  padding: 0;
+}
+
+#ys-product-description #tabs li a {
+  display: block;
+  height: 100%;
+  margin: 0;
+  padding: 0 20px;
+  line-height: 34px;
+  font-size: 14px;
+  color: #4c4c4c;
+  text-decoration: none;
+}
+
+#ys-product-description #tabs li.active a {
+  background: #ebebeb;
+  border: 1px solid #cacaca;
+  border-bottom: 0;
+}
+
+#ys-product-description #tab-content {
+  padding: 20px;
+  border: 1px solid #cacaca;
+  background: #ebebeb;
+}
+
+#ys-product-description #tab-content #submit {
+  display: block;
+  float: left;
+  margin: 22px 0 0 10px;
+}
+
+#ys-product-description #tab-content #submit #submit-btn {
+  height: 35px;
+  line-height: 35px;
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+#ys-product-description #tab-content #titlediv {
+  margin-bottom: 5px;
+}
+
+#ys-product-description #tab-content #titlediv  div:first-child{
+  display: inline-block;
+  float: left;
+  width: 400px;
+  margin-right: 5px;
+}
+
+#ys-product-description #tab-content #tagdiv {
+  display: block;
+  float: left;
+}
+
+#ys-product-description #tab-content #tagdiv label {
+  display: block;
+  font-size: 14px;
+}
+
+#ys-product-description #tab-content #tagdiv input {
+  display: block;
+  width: 60px;
+  height: 38px;
+  margin-top: 3px;
+  padding: 10px 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+#ys-product-description #tab-content #title-label {
+  font-size: 14px;
+}
+
+#ys-product-description #tab-content #title {
+  display: block;
+  height: auto;
+  margin-top: 3px;
+  padding: 10px 8px;
+  font-size: 14px;
+}
+
+#ys-product-description  #wp-content-editor-tools {
+  background: none;
+  padding-top: 10px;
+}
+
+#ys-product-description #postbox-container-2 {
+  width: 100%;
+}
+
+
+
+/************************ TRANSACTIONS ************************/
+#transactions-filters {
+  max-width: 600px;
+}
+
+#transactions-content {
+  margin-top: 10px;
+ /* max-width: 1200px; */
+}
+
+.transactions {
+  border: 1px solid #ddd;
+}
+
+.form-table.transactions thead tr {
+  background-color: #e5e5e5;
+}
+
+.form-table.transactions th {
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+}
+
+.form-table.transactions tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.form-table.transactions td {
+  padding: 10px 20px;
+  border: 1px solid #ccc; 
+}
+
+.form-table.transactions td:last-child{
+  border-right: 0;
+}
+
+.form-table.transactions select {
+  width: 100%;
+}
+
+#ys_pagination li {
+  float: left;
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 0 3px 0 0;
+  padding: 2px;
+  text-align: center;
+  line-height: 24px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+#ys_pagination li.active {
+  background-color: #11629e;
+  color: #fff;
+}
